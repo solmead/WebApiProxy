@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E45B869-D9DF-486B-B09E-40AF0265CA25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApiProxy.Typescript</RootNamespace>
+    <AssemblyName>WebApiProxy.Typescript</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DocsByReflection, Version=1.0.8.0, Culture=neutral, PublicKeyToken=64d1e8338525e7be, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocsByReflection.1.0.11\lib\net40\DocsByReflection.dll</HintPath>
+    </Reference>
+    <Reference Include="HelperSharp, Version=1.0.5560.27038, Culture=neutral, PublicKeyToken=3d44152485e1a4e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\HelperSharp.0.0.4.2\lib\net35\HelperSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\UC Projects\FacultyOneStop\FacultyOneStop\Continuing Education\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\UC Projects\FacultyOneStop\FacultyOneStop\Continuing Education\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\UC Projects\FacultyOneStop\FacultyOneStop\Continuing Education\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\UC Projects\FacultyOneStop\FacultyOneStop\Continuing Education\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\UC Projects\FacultyOneStop\FacultyOneStop\Continuing Education\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\UC Projects\FacultyOneStop\FacultyOneStop\Continuing Education\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utilities.ScriptLibraries, Version=1.2.6579.16886, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Utilities.ScriptLibraries.1.2.6579.16886\lib\net45\Utilities.ScriptLibraries.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebApiProxy.Core, Version=1.3.6021.8367, Culture=neutral, PublicKeyToken=6d05901e523675b1, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebApiProxy.1.3.6021.8370\lib\net45\WebApiProxy.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebApiProxy.Server, Version=1.3.6021.8370, Culture=neutral, PublicKeyToken=e027108dc78234fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebApiProxy.1.3.6021.8370\lib\net45\WebApiProxy.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExportToApiAttribute.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="MetaDataLocalProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup\Generate.cs" />
+    <Compile Include="WebApi\TsProxyTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TsProxyTemplate.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WebApi\TsProxyTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TsProxyTemplate.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery.simulate.js" />
+    <Content Include="Scripts\SysLibs\APILibrary.js" />
+    <Content Include="Scripts\SysLibs\Core.js" />
+    <Content Include="Scripts\SysLibs\DateTime.js" />
+    <Content Include="Scripts\SysLibs\Debug.js" />
+    <Content Include="Scripts\SysLibs\Dialog.js" />
+    <Content Include="Scripts\SysLibs\DynamicGrid.js" />
+    <Content Include="Scripts\SysLibs\es6-promise.auto.js" />
+    <Content Include="Scripts\SysLibs\EventHandler.js" />
+    <Content Include="Scripts\SysLibs\Extensions.js" />
+    <Content Include="Scripts\SysLibs\HtmlHelpers.js" />
+    <Content Include="Scripts\SysLibs\JqueryEx.js" />
+    <Content Include="Scripts\SysLibs\LinqToJs.js" />
+    <Content Include="Scripts\SysLibs\Lock.js" />
+    <Content Include="Scripts\SysLibs\Notifications.js" />
+    <Content Include="Scripts\SysLibs\SiteInfo.js" />
+    <Content Include="Scripts\SysLibs\System-Migrate.js" />
+    <Content Include="Scripts\SysLibs\Tasks.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\SysLibs\APILibrary.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\Core.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\DateTime.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\Debug.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\Dialog.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\DynamicGrid.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\EventHandler.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\Extensions.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\HtmlHelpers.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\JqueryEx.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\LinqToJs.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\Lock.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\Notifications.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\SiteInfo.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\System-Migrate.d.ts" />
+    <TypeScriptCompile Include="Scripts\SysLibs\Tasks.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

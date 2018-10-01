@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiProxy.Core", "WebApiProxy.Core\WebApiProxy.Core.csproj", "{94508206-8537-4088-923B-E7FCB0539903}"
 EndProject
@@ -22,6 +22,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{CC09190C
 		Nuget\build-nuget-server.bat = Nuget\build-nuget-server.bat
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiProxy.Typescript", "WebApiProxy.Typescript\WebApiProxy.Typescript.csproj", "{5E45B869-D9DF-486B-B09E-40AF0265CA25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiProxy.Typescript.Core", "WebApiProxy.Typescript.Core\WebApiProxy.Typescript.Core.csproj", "{751F844D-4850-45BE-87D5-2353217C0F9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,8 +44,19 @@ Global
 		{4E5B8C2F-9008-4A17-ABD1-A92E046C6A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E5B8C2F-9008-4A17-ABD1-A92E046C6A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E5B8C2F-9008-4A17-ABD1-A92E046C6A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E45B869-D9DF-486B-B09E-40AF0265CA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E45B869-D9DF-486B-B09E-40AF0265CA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E45B869-D9DF-486B-B09E-40AF0265CA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E45B869-D9DF-486B-B09E-40AF0265CA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{751F844D-4850-45BE-87D5-2353217C0F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751F844D-4850-45BE-87D5-2353217C0F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751F844D-4850-45BE-87D5-2353217C0F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751F844D-4850-45BE-87D5-2353217C0F9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40375808-E26A-4F35-AA19-2F19B2555189}
 	EndGlobalSection
 EndGlobal
